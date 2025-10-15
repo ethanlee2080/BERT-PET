@@ -1,0 +1,114 @@
+Some weights of the model checkpoint at /home/ec2-user/ec2-user/ligang/prompt_project/PET/bert_base_chinese were not used when initializing BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Using custom data configuration default-fba47d8537f97f7d
+Reusing dataset text (/home/ec2-user/.cache/huggingface/datasets/text/default-fba47d8537f97f7d/0.0.0/21a506d1b2b34316b1e82d0bd79066905d846e5d7e619823c0dd338d6f1fa6ad)
+['/home/ec2-user/ec2-user/ligang/prompt_project/PET', '/home/ec2-user/anaconda3/envs/unline_llm/lib/python39.zip', '/home/ec2-user/anaconda3/envs/unline_llm/lib/python3.9', '/home/ec2-user/anaconda3/envs/unline_llm/lib/python3.9/lib-dynload', '/home/ec2-user/anaconda3/envs/unline_llm/lib/python3.9/site-packages']
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+100%|██████████| 2/2 [00:00<00:00, 874.82it/s]
+Loading cached processed dataset at /home/ec2-user/.cache/huggingface/datasets/text/default-fba47d8537f97f7d/0.0.0/21a506d1b2b34316b1e82d0bd79066905d846e5d7e619823c0dd338d6f1fa6ad/cache-8c89a25b9c5097a3.arrow
+Loading cached processed dataset at /home/ec2-user/.cache/huggingface/datasets/text/default-fba47d8537f97f7d/0.0.0/21a506d1b2b34316b1e82d0bd79066905d846e5d7e619823c0dd338d6f1fa6ad/cache-cea670c64db7ad54.arrow
+开始训练：
+global step 10, epoch: 1, loss: 1.96609, speed: 1.32 step/s
+global step 20, epoch: 2, loss: 1.17869, speed: 1.33 step/s
+/home/ec2-user/anaconda3/envs/unline_llm/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1334: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Evaluation precision: 0.71000, recall: 0.72000, F1: 0.69000
+best F1 performence has been updated: 0.00000 --> 0.69000
+Each Class Metrics are: {'书籍': {'precision': 0.96, 'recall': 0.61, 'f1': 
+0.75}, '平板': {'precision': 0.46, 'recall': 0.83, 'f1': 0.59}, '手机': 
+{'precision': 0.0, 'recall': 0.0, 'f1': 0}, '水果': {'precision': 0.97, 
+'recall': 0.78, 'f1': 0.86}, '洗浴': {'precision': 0.73, 'recall': 0.68, 'f1': 
+0.7}, '电器': {'precision': 0, 'recall': 0.0, 'f1': 0}, '电脑': {'precision': 0,
+'recall': 0.0, 'f1': 0}, '蒙牛': {'precision': 1.0, 'recall': 0.37, 'f1': 0.54},
+'衣服': {'precision': 0.64, 'recall': 0.87, 'f1': 0.73}, '酒店': {'precision': 
+0.99, 'recall': 0.93, 'f1': 0.96}}
+global step 30, epoch: 3, loss: 0.81709, speed: 1.26 step/s
+global step 40, epoch: 4, loss: 0.62105, speed: 1.27 step/s
+Evaluation precision: 0.78000, recall: 0.77000, F1: 0.76000
+best F1 performence has been updated: 0.69000 --> 0.76000
+Each Class Metrics are: {'书籍': {'precision': 0.97, 'recall': 0.82, 'f1': 
+0.89}, '平板': {'precision': 0.57, 'recall': 0.84, 'f1': 0.68}, '手机': 
+{'precision': 0.0, 'recall': 0.0, 'f1': 0}, '水果': {'precision': 0.95, 
+'recall': 0.81, 'f1': 0.87}, '洗浴': {'precision': 0.7, 'recall': 0.71, 'f1': 
+0.7}, '电器': {'precision': 0.0, 'recall': 0.0, 'f1': 0}, '电脑': {'precision': 
+0.86, 'recall': 0.38, 'f1': 0.52}, '蒙牛': {'precision': 1.0, 'recall': 0.68, 
+'f1': 0.81}, '衣服': {'precision': 0.71, 'recall': 0.91, 'f1': 0.79}, '酒店': 
+{'precision': 1.0, 'recall': 0.88, 'f1': 0.93}}
+global step 50, epoch: 6, loss: 0.50076, speed: 1.23 step/s
+global step 60, epoch: 7, loss: 0.41744, speed: 1.23 step/s
+Evaluation precision: 0.77000, recall: 0.69000, F1: 0.69000
+global step 70, epoch: 8, loss: 0.37000, speed: 1.21 step/s
+global step 80, epoch: 9, loss: 0.32418, speed: 1.22 step/s
+Evaluation precision: 0.79000, recall: 0.76000, F1: 0.76000
+global step 90, epoch: 11, loss: 0.28835, speed: 1.20 step/s
+global step 100, epoch: 12, loss: 0.25965, speed: 1.20 step/s
+Evaluation precision: 0.79000, recall: 0.77000, F1: 0.76000
+global step 110, epoch: 13, loss: 0.23612, speed: 1.20 step/s
+global step 120, epoch: 14, loss: 0.21650, speed: 1.21 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.75000
+global step 130, epoch: 16, loss: 0.19988, speed: 1.20 step/s
+global step 140, epoch: 17, loss: 0.18563, speed: 1.20 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.75000
+global step 150, epoch: 18, loss: 0.17328, speed: 1.20 step/s
+global step 160, epoch: 19, loss: 0.16247, speed: 1.21 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.75000
+global step 170, epoch: 21, loss: 0.15294, speed: 1.20 step/s
+global step 180, epoch: 22, loss: 0.14446, speed: 1.20 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.76000
+global step 190, epoch: 23, loss: 0.13687, speed: 1.20 step/s
+global step 200, epoch: 24, loss: 0.13003, speed: 1.21 step/s
+Evaluation precision: 0.78000, recall: 0.77000, F1: 0.76000
+global step 210, epoch: 26, loss: 0.12385, speed: 1.20 step/s
+global step 220, epoch: 27, loss: 0.11822, speed: 1.20 step/s
+Evaluation precision: 0.78000, recall: 0.77000, F1: 0.76000
+global step 230, epoch: 28, loss: 0.11309, speed: 1.20 step/s
+global step 240, epoch: 29, loss: 0.10839, speed: 1.21 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.75000
+global step 250, epoch: 31, loss: 0.10405, speed: 1.20 step/s
+global step 260, epoch: 32, loss: 0.10006, speed: 1.20 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.75000
+global step 270, epoch: 33, loss: 0.09636, speed: 1.20 step/s
+global step 280, epoch: 34, loss: 0.09292, speed: 1.21 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.75000
+global step 290, epoch: 36, loss: 0.08972, speed: 1.20 step/s
+global step 300, epoch: 37, loss: 0.08673, speed: 1.20 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.75000
+global step 310, epoch: 38, loss: 0.08394, speed: 1.20 step/s
+global step 320, epoch: 39, loss: 0.08132, speed: 1.21 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.75000
+global step 330, epoch: 41, loss: 0.07885, speed: 1.20 step/s
+global step 340, epoch: 42, loss: 0.07654, speed: 1.20 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.75000
+global step 350, epoch: 43, loss: 0.07435, speed: 1.20 step/s
+global step 360, epoch: 44, loss: 0.07229, speed: 1.21 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.75000
+global step 370, epoch: 46, loss: 0.07034, speed: 1.20 step/s
+global step 380, epoch: 47, loss: 0.06849, speed: 1.20 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.75000
+global step 390, epoch: 48, loss: 0.06674, speed: 1.20 step/s
+global step 400, epoch: 49, loss: 0.06507, speed: 1.21 step/s
+Evaluation precision: 0.78000, recall: 0.76000, F1: 0.75000
+训练结束
+Some weights of the model checkpoint at /home/ec2-user/ec2-user/ligang/prompt_project/bert-base-chinese were not used when initializing BertForMaskedLM: ['cls.seq_relationship.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Using custom data configuration default-fba47d8537f97f7d
+Reusing dataset text (/home/ec2-user/.cache/huggingface/datasets/text/default-fba47d8537f97f7d/0.0.0/21a506d1b2b34316b1e82d0bd79066905d846e5d7e619823c0dd338d6f1fa6ad)
+['/home/ec2-user/ec2-user/ligang/prompt_project/PET', '/home/ec2-user/anaconda3/envs/chatglm/lib/python39.zip', '/home/ec2-user/anaconda3/envs/chatglm/lib/python3.9', '/home/ec2-user/anaconda3/envs/chatglm/lib/python3.9/lib-dynload', '/home/ec2-user/anaconda3/envs/chatglm/lib/python3.9/site-packages']
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+100%|██████████| 2/2 [00:00<00:00, 127.04it/s]
+
+  0%|          | 0/1 [00:00<?, ?ba/s]
+100%|██████████| 1/1 [00:00<00:00, 13.98ba/s]
+
+  0%|          | 0/1 [00:00<?, ?ba/s]
+100%|██████████| 1/1 [00:00<00:00,  2.17ba/s]
+100%|██████████| 1/1 [00:00<00:00,  2.17ba/s]
+开始训练：
+global step 10, epoch: 1, loss: 2.02984, speed: 1.33 step/s
+global step 20, epoch: 2, loss: 1.21083, speed: 1.35 step/s
+# 数据量更改后：
+Evaluation precision: 0.86000, recall: 0.84000, F1: 0.85000
